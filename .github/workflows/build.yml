@@ -19,10 +19,9 @@ jobs:
 
       - name: Build
         run: gradle build
-        working-directory: ExplosiveArmor
 
       - name: Upload JAR
         uses: actions/upload-artifact@v4
         with:
           name: ExplosiveArmor
-          path: ExplosiveArmor/build/libs/*.jar
+          path: build/libs/*.jar
